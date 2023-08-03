@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('nature.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.box{
+    height:150px;
+    width:150px;
+    background-color:rgb(253, 240, 3);
+    border:hidden;
+    border-radius: 50%;
+    box-shadow: inset -1px -1px 60px 5px red,
+    -1px -1px 20px 5px rgb(248, 61, 4),
+    0 0 49px rgb(235, 43, 4),
+    0 0 100px 10px rgb(235, 43, 4),
+    0 0 180px 30px rgb(235, 43, 4);
+    animation: animate 17s linear ;
+    transform: translateX(1550px);
+    position:absolute;
+    top:55px;
+    animation-duration: 17px;
+
+}
+@keyframes animate {
+    0%{
+        transform: translate(0px);
+        top:20px;
+    }
+    15%{
+        transform: translate(450px);
+        top:30px;
+    }
+    25%{
+        transform:translatex(660px); 
+        top:40px
+    }
+    35%{
+        transform:translatex(850px); 
+        top:60px
+    }
+    45%{
+        transform:translatex(1080px); 
+        top:70px;
+        background-color: yellow;
+        box-shadow: inset -1px -1px 60px 5px rgb(252, 103, 4),
+    -1px -1px 20px 5px rgb(248, 236, 4),
+    0 0 49px rgb(244, 204, 3),
+    }
+    55%{
+        transform:translatex(1250px); 
+        top:80px;
+        background-color: yellow;
+        box-shadow: inset -1px -1px 60px 5px rgb(252, 103, 4),
+    -1px -1px 20px 5px rgb(248, 236, 4),
+    0 0 49px rgb(244, 204, 3),
+    
+    }
+    
+    70%{
+        transform:translatex(1350px); 
+        top:90px;
+        background-color: yellow;
+        box-shadow: inset -1px -1px 60px 5px rgb(252, 103, 4),
+    -1px -1px 20px 5px rgb(248, 236, 4),
+    0 0 49px rgb(244, 204, 3),
+    }
+    80%{
+       transform:translatex(1450px);
+       top:100px;
+    }
+    90%{
+       transform:translatex(1550px);
+       top:160px;
+    }
+    100%{
+        transform:translateX(1550px);
+        top:160px;
+    }
+}
+@media screen and (max-width:480px){
+    body{
+        background: url('nature.jpg');
+        max-height:100vh;
+        max-width:480px;
+        overflow: hidden;
+        background-repeat:repeat-y;
+        
+    }
+    .box{
+        height:80px;
+        width:80px;
+        background-color:rgb(253, 240, 3);
+        border:hidden;
+        border-radius: 50%;
+        box-shadow: inset -1px -1px 60px 5px red,
+        -1px -1px 20px 5px rgb(248, 61, 4),
+        0 0 49px rgb(235, 43, 4),
+        0 0 100px 10px rgb(235, 43, 4),
+        0 0 180px 30px rgb(235, 43, 4);
+        animation: animate 17s linear ;
+        transform: translateX(480px);
+        position:absolute;
+        top:55px;
+        animation-duration: 17px;
+    
+    }
+    @keyframes animate {
+        0%{
+            transform: translate(0px);
+            top:10px;
+        }
+        15%{
+            transform: translate(50px);
+            top:10px;
+        }
+        25%{
+            transform:translatex(100px); 
+            top:20px
+        }
+        35%{
+            transform:translatex(140px); 
+            top:25px
+        }
+        45%{
+            transform:translatex(190px); 
+            top:30px;
+            background-color: yellow;
+            box-shadow: inset -1px -1px 60px 5px rgb(252, 103, 4),
+        -1px -1px 20px 5px rgb(248, 236, 4),
+        0 0 49px rgb(244, 204, 3),
+        }
+        55%{
+            transform:translatex(240px); 
+            top:38px;
+            background-color: yellow;
+            box-shadow: inset -1px -1px 60px 5px rgb(252, 103, 4),
+        -1px -1px 20px 5px rgb(248, 236, 4),
+        0 0 49px rgb(244, 204, 3),
+        
+        }
+        
+        70%{
+            transform:translatex(300px); 
+            top:45px;
+            background-color: yellow;
+            box-shadow: inset -1px -1px 60px 5px rgb(252, 103, 4),
+        -1px -1px 20px 5px rgb(248, 236, 4),
+        0 0 49px rgb(244, 204, 3),
+        }
+        80%{
+           transform:translatex(350px);
+           top:50px;
+        }
+        90%{
+           transform:translatex(390px);
+           top:60px;
+        }
+        100%{
+            transform:translateX(400px);
+            top:70px;
+        }
+    }
+}
